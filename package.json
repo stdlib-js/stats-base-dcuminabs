@@ -1,0 +1,46 @@
+{
+  "name": "@stdlib/stats-base-dcuminabs",
+  "version": "0.0.0",
+  "description": "Calculate the cumulative minimum absolute value of double-precision floating-point strided array elements.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stats-base-dcuminabs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "statistics",
+    "stats",
+    "mathematics",
+    "math",
+    "minimum",
+    "min",
+    "abs",
+    "absolute",
+    "absolute value",
+    "range",
+    "extremes",
+    "domain",
+    "extent",
+    "accumulate",
+    "cumulative",
+    "strided",
+    "strided array",
+    "typed",
+    "array",
+    "float64",
+    "double",
+    "float64array"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
