@@ -41,14 +41,32 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-dcuminabs
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import dcuminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dcuminabs@esm/index.mjs';
+var dcuminabs = require( '@stdlib/stats-base-dcuminabs' );
 ```
 
 #### dcuminabs( N, x, strideX, y, strideY )
@@ -56,7 +74,7 @@ import dcuminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dcuminab
 Computes the cumulative minimum absolute value of double-precision floating-point strided array elements.
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 var y = new Float64Array( x.length );
@@ -76,7 +94,7 @@ The function has the following parameters:
 The `N` and `stride` parameters determine which elements in `x` and `y` are accessed at runtime. For example, to compute the cumulative minimum absolute value of every other element in `x`,
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var x = new Float64Array( [ 1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0 ] );
 var y = new Float64Array( x.length );
@@ -90,7 +108,7 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 <!-- eslint-disable stdlib/capitalized-comments -->
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 // Initial arrays...
 var x0 = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
@@ -109,7 +127,7 @@ dcuminabs( 4, x1, -2, y1, 1 );
 Computes the cumulative minimum absolute value of double-precision floating-point strided array elements using alternative indexing semantics.
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 var y = new Float64Array( x.length );
@@ -126,7 +144,7 @@ The function has the following additional parameters:
 While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, `offsetX` and `offsetY` parameters support indexing semantics based on a starting indices. For example, to calculate the cumulative minimum absolute value of every other value in `x` starting from the second value and to store in the last `N` elements of `y` starting from the last element
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var x = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
 var y = new Float64Array( x.length );
@@ -155,16 +173,11 @@ dcuminabs.ndarray( 4, x, 2, 1, y, -1, y.length-1 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import dcuminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dcuminabs@esm/index.mjs';
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var Float64Array = require( '@stdlib/array-float64' );
+var dcuminabs = require( '@stdlib/stats-base-dcuminabs' );
 
 var y;
 var x;
@@ -180,10 +193,6 @@ console.log( y );
 
 dcuminabs( x.length, x, 1, y, -1 );
 console.log( y );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -222,7 +231,7 @@ console.log( y );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -276,25 +285,28 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 [deno-url]: https://github.com/stdlib-js/stats-base-dcuminabs/tree/deno
+[deno-readme]: https://github.com/stdlib-js/stats-base-dcuminabs/blob/deno/README.md
 [umd-url]: https://github.com/stdlib-js/stats-base-dcuminabs/tree/umd
+[umd-readme]: https://github.com/stdlib-js/stats-base-dcuminabs/blob/umd/README.md
 [esm-url]: https://github.com/stdlib-js/stats-base-dcuminabs/tree/esm
+[esm-readme]: https://github.com/stdlib-js/stats-base-dcuminabs/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/stats-base-dcuminabs/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-base-dcuminabs/main/LICENSE
 
-[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64/tree/esm
+[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 <!-- <related-links> -->
 
-[@stdlib/stats/base/cuminabs]: https://github.com/stdlib-js/stats-base-cuminabs/tree/esm
+[@stdlib/stats/base/cuminabs]: https://github.com/stdlib-js/stats-base-cuminabs
 
-[@stdlib/stats/base/dcumaxabs]: https://github.com/stdlib-js/stats-base-dcumaxabs/tree/esm
+[@stdlib/stats/base/dcumaxabs]: https://github.com/stdlib-js/stats-base-dcumaxabs
 
-[@stdlib/stats/base/dcumin]: https://github.com/stdlib-js/stats-base-dcumin/tree/esm
+[@stdlib/stats/base/dcumin]: https://github.com/stdlib-js/stats-base-dcumin
 
-[@stdlib/stats/base/scuminabs]: https://github.com/stdlib-js/stats-base-scuminabs/tree/esm
+[@stdlib/stats/base/scuminabs]: https://github.com/stdlib-js/stats-base-scuminabs
 
 <!-- </related-links> -->
 
