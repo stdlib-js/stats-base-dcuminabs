@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dcuminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dcuminabs@esm/index.mjs';
+import dcuminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dcuminabs@v0.2.1-esm/index.mjs';
 ```
 
 #### dcuminabs( N, x, strideX, y, strideY )
@@ -164,7 +164,7 @@ dcuminabs.ndarray( 4, x, 2, 1, y, -1, y.length-1 );
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import dcuminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dcuminabs@esm/index.mjs';
+import dcuminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dcuminabs@v0.2.1-esm/index.mjs';
 
 var y;
 var x;
