@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-21)
+## Unreleased (2024-12-23)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`c13062e`](https://github.com/stdlib-js/stdlib/commit/c13062e5b90cbe28ec62f0b690211bd14b626cf3) - **style:** update to use tabs for indentation _(by Philipp Burckhardt)_
 -   [`2cbb06c`](https://github.com/stdlib-js/stdlib/commit/2cbb06c836012da88b028b373948705de9ccd970) - **refactor:** update `stats/base/dcuminabs` native addon from C++ to C [(#4075)](https://github.com/stdlib-js/stdlib/pull/4075) _(by Aayush Khanna)_
 -   [`9e689ff`](https://github.com/stdlib-js/stdlib/commit/9e689ffcb7c6223afc521f1e574b42f10921cf5e) - **chore:** fix indentation in manifest.json files _(by Philipp Burckhardt)_
 -   [`272ae7a`](https://github.com/stdlib-js/stdlib/commit/272ae7ac5c576c68cfab1b6e304c86407faa20cd) - **docs:** remove comment _(by Athan Reines)_
