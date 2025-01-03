@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-01-02)
+## Unreleased (2025-01-03)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`ff7a8c1`](https://github.com/stdlib-js/stdlib/commit/ff7a8c145900de9b8af74ba06e763b8113dcdec1) - **docs:** add missing spaces _(by Philipp Burckhardt)_
 -   [`a510d78`](https://github.com/stdlib-js/stdlib/commit/a510d781f292a698c2c51afda15405795363324c) - **feat:** add C ndarray interface and refactor implementation for `stats/base/dcuminabs` [(#4156)](https://github.com/stdlib-js/stdlib/pull/4156) _(by Aayush Khanna)_
 -   [`62364f6`](https://github.com/stdlib-js/stdlib/commit/62364f62ea823a3b52c2ad25660ecd80c71f8f36) - **style:** fix C comment alignment _(by Philipp Burckhardt)_
 -   [`c13062e`](https://github.com/stdlib-js/stdlib/commit/c13062e5b90cbe28ec62f0b690211bd14b626cf3) - **style:** update to use tabs for indentation _(by Philipp Burckhardt)_
